@@ -20,6 +20,7 @@ class HBNBCommand(cmd.Cmd):
     def do_create(self, arg):
         """
         Creates a new instance of BaseModel
+
         saves it (to the JSON file) and prints id
         """
         if len(arg) == 0:
@@ -38,6 +39,7 @@ class HBNBCommand(cmd.Cmd):
     def do_show(self, arg):
         """
         Prints the string representation of an instance:
+
         based on the class name and id
         """
         splt = arg.split(" ")
