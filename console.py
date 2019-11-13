@@ -18,11 +18,7 @@ class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
 
     def do_create(self, arg):
-        """
-        Creates a new instance of BaseModel
-
-        saves it (to the JSON file) and prints id
-        """
+        """ saves to (to the JSON file) and prints id """
         if len(arg) == 0:
             print("** class name missing **")
             return
@@ -37,11 +33,7 @@ class HBNBCommand(cmd.Cmd):
         print(new.id)
 
     def do_show(self, arg):
-        """
-        Prints the string representation of an instance:
-
-        based on the class name and id
-        """
+        """ Prints the string representation of an instance """
         splt = arg.split(" ")
         if len(arg) == 0:
             print("** class name missing **")
@@ -86,9 +78,7 @@ class HBNBCommand(cmd.Cmd):
         models.storage.save()
 
     def do_all(self, arg):
-        """
-        Prints all string representation of all instances based on class name
-        """
+        """ Prints all string repr of all instances based on class name """
         new = []
         dic = models.storage.all()
         if len(arg) == 0:
