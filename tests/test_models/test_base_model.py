@@ -4,6 +4,8 @@ import unittest
 import uuid
 from datetime import datetime
 from models.base_model import BaseModel
+import pep8
+
 
 class TestBaseModel(unittest.TestCase):
     """ class to test BaseModel """
@@ -52,3 +54,10 @@ class TestBaseModel(unittest.TestCase):
         dic2 = test2.to_dict()
         self.assertDictEqual(dic, dic2)
 
+    def test_pep8_conformance(self):
+        """test that we conform to pep8"""
+
+        pep8style = pep8.StyleGuide(quiet=True)
+        result = pep8style.check_files(["models/base_model.py"])
+        self.assertEqual(result.total_errors, 0,
+                "Found code style errors (and warnings).")
