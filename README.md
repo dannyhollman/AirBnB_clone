@@ -42,6 +42,18 @@ eed21641-e8df-4fff-b98b-7798e5644a2b
 $
 ```
 
+Other Commands
+
+create <class> - Creates a new instance of BaseModel and saves to json. <br />
+<br />
+show <class> <id> - Prints string representation of an instance. <br />
+<br />
+destroy <class> <id> - Deletes an instance. <br />
+<br />
+all <class/optional> - Prints all string representation of all instances. <br />
+<br />
+update <class> <id> <attribute> - Updates an instance based on class name.
+
 Non-Interactive Mode
 ```bash
 $ echo "help" | ./console.py
