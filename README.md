@@ -44,15 +44,15 @@ $
 
 Other Commands
 
-create <class> - Creates a new instance of BaseModel and saves to json. <br />
+create \<class\> - Creates a new instance of BaseModel and saves to json. <br />
 <br />
-show <class> <id> - Prints string representation of an instance. <br />
+show \<class\> \<id\> - Prints string representation of an instance. <br />
 <br />
-destroy <class> <id> - Deletes an instance. <br />
+destroy \<class\> \<id\> - Deletes an instance. <br />
 <br />
-all <class/optional> - Prints all string representation of all instances. <br />
+all \<class\> - Prints all string representation of all instances. <br />
 <br />
-update <class> <id> <attribute> - Updates an instance based on class name.
+update \<class\> \<id\> \<attribute name\> \<attribute value\> - Updates an instance based on class name.
 
 Non-Interactive Mode
 ```bash
